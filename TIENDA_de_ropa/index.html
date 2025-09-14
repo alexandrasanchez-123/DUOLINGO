@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ED STORE</title>
+  <link rel="stylesheet" href="./styles/ropa.css">
+</head>
+<body>
+ <header>
+  <img class="logo" src="./imagenes/logo.png" alt="">
+  <h1>TIENDA DEPORTIVA</h1>
+  <nav>
+    <ul>
+      <li><a href="#mujer">leggins</a></li>
+      <li><a href="#hombre">conjuntos y enterizos</a></li>
+      <li><a href="#accesorios">shorts y medias</a></li>
+      <li><a href="javascript:void(0)" onclick="irARedes()">redes</a></li> <!-- 🔹 Aquí -->
+    </ul>
+  </nav>
+</header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <p>Descubre lo último en ropa para entrenar y verte increíble.</p>
+    <a href="#leggis" class="btn-banner">Ver colección</a>
+  </section>
+
+  <!-- Mujer -->
+  <section id="mujer" class="productos">
+    <h2>LEGGIS</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="./imagenes/leggis en rib.jpeg" alt="Leggins Mujer">
+        <h3>Leggis en Rib</h3>
+        <p>$40.000</p>
+      
+      </div>
+      <div class="card">
+        <img src="./imagenes/leggis Push Up en V.jpeg" alt="Top Mujer">
+        <h3>Leggis Push Up en V</h3>
+        <p>$60.000</p>
+     
+      </div>
+      <div class="card">
+        <img src="./imagenes/Legis en rib color nub.jpeg" alt="Leggins Mujer">
+        <h3>Leggins en Rib color nude</h3>
+        <p>$40.000</p>
+   
+      </div>
+    </div>
+  </section>
+
+  <!-- Hombre -->
+  <section id="hombre" class="productos">
+    <h2>conjuntos y enterizos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="./imagenes/conjunto duo en Neopreno.jpeg" alt="Camiseta Hombre">
+        <h3>conjunto duo en Neopreno</h3>
+        <p>$40.000</p>
+      
+      </div>
+
+      <div class="card">
+        <img src="./imagenes/conjunto duo en Nepreno.jpeg" alt="Pantalón Hombre">
+        <h3>conjunto duo en Nepreno</h3>
+        <p>$40.000</p>
+      
+      </div>
+
+      <div class="card">
+        <img src="./imagenes/enterizos  material nylon Spandex Licrado.jpeg" alt="Enterizo Hombre">
+        <h3>enterizos material nylon Spandex Licrado</h3>
+        <p>$50.000</p>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Accesorios -->
+  <section id="accesorios" class="productos">
+    <h2>short, medias y tops</h2>
+    <div class="grid">
+      <!-- SHORT -->
+      <div class="card">
+        <img src="./imagenes/short corto push Up.jpeg" alt="Short">
+        <h3>short corto push Up</h3>
+        <p>$38.000</p>
+        <button onclick="mostrarColores()">Seleccionar color</button>
+
+        <!-- Menú oculto -->
+        <div id="menu-colores" class="menu-colores">
+          <h4>Elige un color:</h4>
+          <button>Negro</button>
+          <button>Gris</button>
+          <button>Azul</button>
+          <button>Morado</button>
+          <button>Verde</button>
+        </div>
+      </div>
+
+      <!-- TOP -->
+      <div class="card">
+        <img src="./imagenes/top americano.jpeg" alt="Top">
+        <h3>top americano</h3>
+        <p>$30.000</p>
+        <button onclick="mostrarOpcionesTop()">Seleccionar</button>
+
+        <div id="menu-top" class="menu-colores">
+          <h4>Elige talla y color:</h4>
+
+          <p><b>Talla S</b></p>
+          <button>Negro</button>
+          <button>Gris</button>
+          <button>Azul</button>
+          <button>Morado</button>
+          <button>Verde</button>
+
+          <p><b>Talla M</b></p>
+          <button>Negro</button>
+          <button>Gris</button>
+          <button>Azul</button>
+          <button>Morado</button>
+          <button>Verde</button>
+
+          <p><b>Talla L</b></p>
+          <button>Negro</button>
+          <button>Gris</button>
+          <button>Azul</button>
+          <button>Morado</button>
+          <button>Verde</button>
+        </div>
+      </div>
+
+      <!-- MEDIAS -->
+      <div class="card">
+        <img src="./imagenes/Medias largar y cortas.jpeg" alt="Medias">
+        <h3>Medias largas y tobilleras</h3>
+        <p>$10.000</p>
+        <button onclick="mostrarOpcionesMedias()">Seleccionar</button>
+
+        <div id="menu-medias" class="menu-colores">
+          <h4>Elige tipo y color:</h4>
+          <p><b>Medias Largas</b></p>
+          <button>Negras</button>
+          <button>Grises</button>
+          <button>Azules</button>
+          <button>Moradas</button>
+          <button>Verdes</button>
+
+          <p><b>Medias Tobilleras</b></p>
+          <button>Negras</button>
+          <button>Grises</button>
+          <button>Azules</button>
+          <button>Moradas</button>
+          <button>Verdes</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer id="redes">
+  <p>© 2025 ED SPORT Tienda deportiva - Todos los derechos reservados</p>
+    <p>Síguenos en nuestras redes:</p>
+  <div class="social-icons">
+    <a href="https://wa.me/573001112233" target="_blank">
+      <img src="./imagenes/whapp-color.png" alt="WhatsApp">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61581108981107" target="_blank">
+      <img src="./imagenes/facebook-color.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/edst.ore12/" target="_blank">
+      <img src="./imagenes/instagram.png"  alt="Instagram">
+    </a>
+  </div>
+ 
+</footer>
+
+  <script src="./ropa.js"></script>
+</body>
+</html>
+</html>
